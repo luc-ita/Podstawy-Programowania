@@ -149,3 +149,27 @@ family_members = 5
 total_income = father_income + mother_income
 income_per_person = total_income / family_members
 print(f'Total family income is {total_income}, and income per person is {income_per_person}')
+
+
+###
+# 4.3
+#
+a = 3
+b = 5
+print(f'{a}+{b}={a+b}')
+print(f'{a}-{b}={a-b}')
+print(f'{a}*{b}={a*b}')
+print(f'{a}/{b}={a/b}')
+
+
+###
+# 5.1
+# A program that reads your first and last name from the keyboard.
+# Store this data in two separate variables.
+# Then, print your full name i.e. first and last name separated by a single space.
+#
+first_name = input('Enter your first name: ')
+last_name = input('Enter your last name: ')
+full_name = first_name + ' ' + last_name
+print(f'Your first name is {first_name} and your last name is {last_name}')
+print(f'And your full name is {full_name}')
