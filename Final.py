@@ -173,3 +173,31 @@ last_name = input('Enter your last name: ')
 full_name = first_name + ' ' + last_name
 print(f'Your first name is {first_name} and your last name is {last_name}')
 print(f'And your full name is {full_name}')
+
+
+###
+# 5.2
+# A program to calculate the volume and surface area of ​​a cube.
+# 
+cube_side_string = input('Enter cube side: ')
+cube_side = int(cube_side_string)
+cube_volume = cube_side**3
+cube_surface_area = cube_side**2 * 6
+print(f'The volume of a cube with side {cube_side} is {cube_volume}')
+print(f'The surface area of a cube with side {cube_side} is {cube_surface_area}')
+
+
+###
+# 5.3
+# A program to calculate the volume and surface area of ​​a cuboid.
+# 
+string_a = input('Enter cuboid side a: ')
+a = int(string_a)
+string_b = input('Enter cuboid side b: ')
+b = int(string_b)
+string_c = input('Enter cuboid side c: ')
+c = int(string_c)
+cuboid_volume = a *b *c
+cuboid_surface_area = a*b*2 + a*c*2 + b*c*2
+print(f'The volume of a cuboid with sides {a}, {b}, {c} is {cuboid_volume}')
+print(f'The surface area of a cuboid with sides {a}, {b}, {c}  is {cuboid_surface_area}')
