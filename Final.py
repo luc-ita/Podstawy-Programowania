@@ -273,3 +273,81 @@ print(f'Initials: {employee[4]} {employee[9]}')
 #
 phone = input('Enter phone number: ')
 print(f'Phone number: {phone[0:3]}-{phone[3:6]}-{phone[6:9]}')
+
+###
+# 6.6
+# A program to print numerical representations of characters.
+#
+print(f'a {ord('a')}')
+print(f'b {ord('b')}')
+print(f'z {ord('z')}')
+print(f'A {ord('A')}')
+print(f'B {ord('B')}')
+print(f'Z {ord('Z')}')
+print(f'! {ord('!')}')
+print(f'= {ord('=')}')
+print(f'+ {ord('+')}')
+print(f'€ {ord('€')}')
+
+###
+# 6.7
+# A program that prints a numerical representation of each letter of your name.
+#
+name = 'Luca' # replace John with your name
+print(f'The letter {name[0]} has a code {ord(name[0])}')
+print(f'The letter {name[1]} has a code {ord(name[1])}')
+print(f'The letter {name[2]} has a code {ord(name[2])}')
+print(f'The letter {name[3]} has a code {ord(name[3])}')
+
+###
+# 6.8
+# A program that calculates
+# how many letters are between two given letters
+#
+first = input('Enter first letter: ')
+last = input('Enter second letter: ')
+first_letter_code = ord(first)
+second_letter_code = ord(last)
+number_of_letters = second_letter_code - first_letter_code - 1
+print(f'Between {first} and {last} is {number_of_letters} letters')
+
+###
+# 6.9
+# Character code conversion
+#
+print('67', chr(67))
+print('111', chr(111))
+print('111', chr(111))
+print('108', chr(108))
+print('33', chr(33))
+print()
+#or
+print(chr(67),chr(111),chr(111),chr(108),chr(33))
+
+
+###
+# 6.10
+# String manipulation
+#
+movie = "The Lord of the Rings: The Return of the King"
+
+# print number of characters
+print('Number of characters: ', len(movie))
+
+# print title in capital letters
+print(movie.upper())
+
+# print title in small letters
+print(movie.casefold())
+
+# print how many times the vowel "e" appears in the title
+print(movie.count("e"), ' of e')
+
+# print where in the text is the word "Lord"
+print('Lord is on', movie.find("Lord"))
+
+# print where in the text is the word "dragon"
+if (movie.find("dragon")) == -1:
+    print('There is no dragon in this title')
+else:
+    print('dragon is on', movie.find("dragon"))

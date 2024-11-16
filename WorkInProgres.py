@@ -1,8 +1,27 @@
 ###
-# 6.5
-# a program that prints a 9-digit telephone number
-# entered from the keyboard as three groups of 3 digits each,
-# separated by a dash character.
+# 6.10
+# String manipulation
 #
-phone = input('Enter phone number: ')
-print(f'Phone number: {phone[0:3]}-{phone[3:6]}-{phone[6:9]}')
+
+movie = "The Lord of the Rings: The Return of the King"
+
+# print number of characters
+print('Number of characters: ', len(movie))
+
+# print title in capital letters
+print(movie.upper())
+
+# print title in small letters
+print(movie.casefold())
+
+# print how many times the vowel "e" appears in the title
+print(movie.count("e"), ' of e')
+
+# print where in the text is the word "Lord"
+print('Lord is on', movie.find("Lord"))
+
+# print where in the text is the word "dragon"
+if (movie.find("dragon")) == -1:
+    print('There is no dragon in this title')
+else:
+    print('dragon is on', movie.find("dragon"))
