@@ -202,4 +202,26 @@ cuboid_surface_area = a*b*2 + a*c*2 + b*c*2
 print(f'The volume of a cuboid with sides {a}, {b}, {c} is {cuboid_volume}')
 print(f'The surface area of a cuboid with sides {a}, {b}, {c}  is {cuboid_surface_area}')
 
-##
+###
+# 5.4
+# A program to calculate the VAT.
+# 
+a = input('Enter ammount: ')
+b = int(a) * 0.23
+print()
+print(f'Your ammount : {a}')
+print(f'Your VAT     : {b}')
+
+###
+# 5.5
+# A program to calculate the price and discount.
+# 
+ast = input(f'Enter price: ')
+bst = input(f'Enter discount %: ')
+a = float(ast)
+b = int(bst)
+c = round((100 - b) / 100 * a, 2)
+d = round((a - c), 2)
+print()
+print(f'Price with discount: {c}')
+print(f'Reduction: {d}')
