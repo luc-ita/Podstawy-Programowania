@@ -225,3 +225,51 @@ d = round((a - c), 2)
 print()
 print(f'Price with discount: {c}')
 print(f'Reduction: {d}')
+
+###
+# 6.1
+# A program that calculates the number of characters
+# of your name, surname and full name
+#
+name = 'Luca'   # replace Anna with your name
+surname = 'Gorzkowski' # replace May with your surname
+characters_in_name = len(name)
+print(f'Your name has {characters_in_name} characters')
+print(f'Your surname has {len(surname)} characters')
+print(f'Your full name has {len(name + surname)} characters') # with a space between name and surname
+
+###
+# 6.2
+# A program that prints your initials
+#
+name = 'Luca'
+surname = 'Gorzkowski'
+print(name[0], surname[0])
+
+###
+# 6.3
+# A program that find and show upper letters:
+#
+university = "Krakow University of Economics"
+for letter in university:
+   if letter.isupper():
+      print(letter)
+
+      ###
+# 6.4
+# A program for printing detailed information.
+#
+employee = "Mr. John May, born on 1998-02-16"
+print(f'Name: {employee[4:8]}')
+print(f'Surname: {employee[9:12]}')
+print(f'Born: {employee[22:35]}')
+print(f'Initials: {employee[4]} {employee[9]}')
+
+###
+# 6.5
+# a program that prints a 9-digit telephone number
+# entered from the keyboard as three groups of 3 digits each,
+# separated by a dash character.
+#
+phone = input('Enter phone number: ')
+print(f'Phone number: {phone[0:3]}-{phone[3:6]}-{phone[6:9]}')
