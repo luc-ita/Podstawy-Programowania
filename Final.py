@@ -451,3 +451,83 @@ print(d1, d2, d3, d4)
 print()
 print('Dice rolled: 4')
 print(f'Special number (1 or 6): {d1 == 1 or d1 == 6 or d2 == 1 or d2 == 6 or d3 == 1 or d3 == 6 or d4 == 1 or d4 == 6}')
+
+###
+# 7.10
+# A program that enables a user to challenge a computer.
+# The computer throws dice. Then, the user then tries to guess
+# the number from dice by entering a number from 1 to 6
+# from the keyboard. If the user has guessed the number
+# from the dice, the computer prints True. Otherwise,
+# the computer prints False.
+#
+import random
+# COMPUTER TURN
+computer = random.randint(1,6)
+# YOUR TURN
+you = int(input('Guess the number: '))
+print(f'{you == computer} It was {computer}')
+
+###
+# 8.2
+# Calculation of circle area and circumference 
+#
+r = int(input('Enter the radius: '))
+pi = 3.14
+c = round(2 * pi * r, 2)
+a = round(pi * r * r, 2)
+
+print(f'Circumference = {c}')
+print(f'Area =  = {a}') 
+
+###
+# 8.3
+# Calculation of temperature
+#
+c = int(input('Enter the temmperature: '))
+f = round(9 / 5 * c + 32, 2)
+k = c + 273.15
+print(f' There is {f} degrees Fahrenheit or {k} Kelwins')
+
+###
+# 8.4
+# A program that prints your height both in cm and in feet and inches.
+#
+cm = int(input('Enter your height in cm: '))
+feet = cm // 30.4
+inches = cm // 2.54
+feetmod = cm % 30.4
+inchesmod = cm % 2.54
+print(f'I am {cm}cm tall, i.e. {feet} feet and {inches} inches')
+print(f'Reaminders are {feetmod} feet and {inchesmod} inches')
+
+###
+# 8.5
+# A program that reads a SWIFT code from the keyboard
+# and prints the bank code and country code.
+#
+swift = input('Input your SWIFT cdoe: ')
+print(f'Bank Code: {swift[0:4]}')
+print(f'Country Code: {swift[4:6]}')
+
+###
+# 8.6
+# The program calculates the cost of transporting goods
+# based on the given distance in km, fuel price per 1 liter,
+# and fuel consumption in liters per 100 km.
+#
+distance = int(input('Enter distance in km: '))
+fuel_price = float(input('Enter fuel price per liter: '))
+fuel_consumption = float(input ('Enter fuel consumption in liters per 100 km: '))
+total_fuel_consumption = distance * fuel_consumption / 100
+total_cost = fuel_price * total_fuel_consumption
+print(f'Total fuel consumption: {total_fuel_consumption}')
+print(f'And you will pay: {total_cost}')
+
+###
+# 8.7
+# Powerful program to convert decimal to binary and hexagonal
+dec = int(input('Enter number: '))
+bin = bin(dec)
+hex = hex(dec)
+print(f'This number in binary number is: {bin} and in the hexagonal is: {hex}')
