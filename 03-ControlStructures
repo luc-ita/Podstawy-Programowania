@@ -490,6 +490,26 @@ while True:
     else:
         print("Invalid option. Please try again.")
 
+
+#6.2
+###
+# Counts vowels in the text
+#
+text = "This is a sample text."
+vowels = "aeiouAEIOU"
+vowel_count = 0
+i = 0
+# Count vowels in the text
+while i < len(text):
+    if text[i] in vowels:
+        vowel_count += 1
+    i += 1
+
+print(f"The number of vowels in the text is: {vowel_count}")
+
+
+
+
 #6.3
 ###
 # House lighting with three bulbs and two switches
@@ -820,7 +840,18 @@ for i in range(18):
     print(c)
 
 
-###################################################################
+#6.29
+max = int(input('Wpisz zakres: '))
+for check in range(2, max):
+
+
+##    check = int(input("Wpisz sprawdzana liczbe: "))  
+    for i in range(2,check): ## sprawdzanie czy dana liczba jest pierwsza i jej drukowanie
+        if (check % i) == 0:  ## podzieliła się bez reszty - wychodzimy z for'a bez else
+            break
+    else:                   ## wchodzimy po zrobieniu fora
+        print(check)
+        
 
 
 #6.30
