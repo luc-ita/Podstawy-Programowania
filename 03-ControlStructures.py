@@ -855,8 +855,7 @@ for check in range(2, max):
 
 
 #6.30
-for i in range(7):
-    i += 1
+for i in range(1,8):
     for j in range(7):
         x = i + 7 * j
         print(x, end=' ')
