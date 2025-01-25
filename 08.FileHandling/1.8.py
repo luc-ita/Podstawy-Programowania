@@ -1,16 +1,8 @@
-###
-# Reads the entire contents of a file
-#
-def read_from_file(name):
-   with open(name) as file:
-      content = file.read()
-   return content
+with open('pets.txt') as f:
+    content = f.read()
 
-# reads the entire file and splits
-file_content = read_from_file('pets.txt')
-file_words = file_content.split()
+print(content)
 
-# calculates the total number of words
-total = len(file_words)
+words = content.split()
+print('Word count:', len(words))
 
-print('Total words:', total)

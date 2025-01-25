@@ -1,16 +1,19 @@
 ###
-# Reads the entire contents of a file
+# Prints employees employed in a specified position.
 #
-def read_from_file(name):
-   with open(name) as file:
-      content = file.read()
-   return content
 
-# reads the entire file and splits lines into array
-file_content = read_from_file('it_company.csv')
-file_lines = file_content.splitlines()
+# Employee List
+file_name = 'it_company.csv'
 
-# print employees as Software Enginner
-for line in file_lines:
-   if 'Software Engineer' in line:
-      print(line)
+# Position
+job_title = 'Software Engineer'
+
+
+count = 0
+with open(file_name) as f:
+    for line in f.readlines():
+        if job_title in line:
+            count += 1
+            print(f'{count}. {line}', end="")
+
+

@@ -13,9 +13,6 @@ file_content = read_from_file('countries.txt')
 # and stores them in an array
 file_lines = file_content.splitlines()
 
-# sort
-file_sorted = (file_lines).sort()
-
 # prints the array
-for line in file_lines:
+for line in sorted(file_lines): 
    print(line)
