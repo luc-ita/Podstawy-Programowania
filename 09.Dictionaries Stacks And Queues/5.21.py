@@ -1,7 +1,7 @@
 import json
 
 # Dictionary describing Batman Begins
-interstellar_info = {
+batman_info = {
     "title": "Batman Begins",
     "director": "Christopher Nolan",
     "year": 2005,
@@ -12,5 +12,5 @@ interstellar_info = {
 
 # Write the dictionary to a JSON file
 with open('favourite.json', 'w') as file:
-    json.dump(interstellar_info, file, indent=4)
+    json.dump(batman_info, file, indent=4)
 
