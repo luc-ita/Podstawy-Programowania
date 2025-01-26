@@ -1,0 +1,15 @@
+{
+    "title": "Batman Begins",
+    "director": "Christopher Nolan",
+    "year": 2005,
+    "main_actors": [
+        "Christian Bale",
+        "Michael Caine",
+        "Liam Neeson"
+    ],
+    "genre": [
+        "Criminal",
+        "Adventure",
+        "Drama"
+    ]
+}
